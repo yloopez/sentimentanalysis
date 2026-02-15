@@ -1,0 +1,6 @@
+python --version (This checks the version, make sure it is 3.13)
+python -m venv venv  (This creates a new virtual environment)
+venv\Scripts\activate (This activates the venv)
+pip install -r requirements.txt (This install all the dependencies in the requirements document)
+python -c "import nltk; nltk.download('stopwords'); nltk.download('punkt')" (This downloads stopwords and punkt for the Natural Language Processing)
+Here I installed kagglehub : pip install kagglehub

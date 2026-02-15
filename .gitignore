@@ -1,0 +1,38 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Kaggle credentials
+.kaggle/
+kaggle.json
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Models and data
+*.pkl
+*.pkl
+*.h5
+*.model
+data/
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
