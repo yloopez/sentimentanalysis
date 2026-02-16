@@ -1,13 +1,13 @@
 # Sentiment Analysis API - Production ML System
 
-> End-to-end machine learning system for real-time sentiment analysis
+> End-to-end machine learning system for real-time sentiment analysis of product reviews
 
-**Project Status**: In Development
+**Project Status**: Data preprocessing complete, ready for model training
 
 ## Overview
 
 This project demonstrates a complete ML system pipeline from data exploration 
-to production deployment, including:
+to production deployment. Currently trained on 194K+ cellphone and accessory reviews.
 
 - Machine learning model development
 - REST API with FastAPI
@@ -19,16 +19,30 @@ to production deployment, including:
 ## Current Progress
 
 - [x] Project setup
-- [x] Data acquisition
+- [x] Data acquisition (194,439 reviews from Kaggle)
 - [x] Initial data exploration
-- [ ] Data preprocessing
-- [ ] Model training
+- [x] Data cleaning & preprocessing
+- [x] Sentiment label creation
+- [x] Class balancing
+- [x] Feature engineering
+- [ ] Model training (NEXT)
+- [ ] Model evaluation
 - [ ] API development
 - [ ] Deployment
 
 ## Dataset
 
-Using [Dataset Name] with 194,439 reviews for sentiment analysis.
+Using Cell_Phones_and_Accessories_5 with 194,439 reviews for sentiment analysis.
+
+
+## Data Processing Pipeline
+
+1. Remove missing/empty reviews
+2. Filter by review length (3-500 words)
+3. Remove duplicates
+4. Create sentiment labels from ratings
+5. Balance classes for training
+6. Text preprocessing (cleaning, normalization)
 
 ## Tech Stack
 
@@ -36,6 +50,7 @@ Using [Dataset Name] with 194,439 reviews for sentiment analysis.
 - Python 3.13.5
 - pandas, numpy, scikit-learn
 - NLTK for text processing
+- matplotlib, seaborn for visualization
 
 **Backend (Coming Soon):**
 - FastAPI
